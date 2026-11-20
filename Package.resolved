@@ -1,0 +1,87 @@
+{
+  "originHash" : "b6505936d9068a8695fe86d3b0d0d405c3b08f90106ab7ff6a394c61f9b400e5",
+  "pins" : [
+    {
+      "identity" : "and",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Catterwaul/And",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0f2140e7b7be969bc5fc3c79804d9dfe0c7462ee"
+      }
+    },
+    {
+      "identity" : "conformancedelegator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Catterwaul/ConformanceDelegator",
+      "state" : {
+        "branch" : "main",
+        "revision" : "398aed9ed028af52fc12f73a0a853aa02d7aa0d5"
+      }
+    },
+    {
+      "identity" : "hemiprocnemystaceacollections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Catterwaul/HemiprocneMystaceaCollections",
+      "state" : {
+        "branch" : "main",
+        "revision" : "cccc3962463438db3510e49b71eb8bd7a13da820"
+      }
+    },
+    {
+      "identity" : "initializable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Catterwaul/Initializable",
+      "state" : {
+        "branch" : "main",
+        "revision" : "002fea85b0a37634ad58c65f75f4ee6ad881d63f"
+      }
+    },
+    {
+      "identity" : "not",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Catterwaul/Not",
+      "state" : {
+        "branch" : "main",
+        "revision" : "40188ef5bc1f444a0caa54832c2d1f4f28e9527f"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a807eb67ee7421ba6f1871be1ca6ae2c366b4bd1"
+      }
+    },
+    {
+      "identity" : "swift-docc-plugin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-docc-plugin",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4c429d57229d9991a96e2e78f1096b43da3513cb"
+      }
+    },
+    {
+      "identity" : "swift-docc-symbolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-docc-symbolkit",
+      "state" : {
+        "revision" : "b45d1f2ed151d057b54504d653e0da5552844e34",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax",
+      "state" : {
+        "branch" : "main",
+        "revision" : "60f0e15f908575c7ba83053b8d12ccd055cb73aa"
+      }
+    }
+  ],
+  "version" : 3
+}
