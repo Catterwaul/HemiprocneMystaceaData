@@ -1,7 +1,4 @@
-import Foundation
-import typealias HMCollections.SortedArray
 import HMData
-import protocol Initializable.InitializableWithoutArguments
 import SwiftData
 import Testing
 
@@ -57,39 +54,5 @@ enum PersistentModel_Tests {
 
     #expect(try (context.fetch(.init()) as [Toy]).map(\.name).sorted() == ["🐟", "🧶"])
     #expect(cat.toys.wrappedValue.allSatisfy { toy in kept.contains { $0 === toy } })
-  }
-}
-
-@Model final class Cat {
-  @Relationship(deleteRule: .cascade) @RuntimeSorted private var persistedToys: [Toy]?
-
-  init() { }
-}
-
-@Model final class Toy: Sortable {
-  /// Orders toys by name.
-  struct Comparator: SortComparator, InitializableWithoutArguments {
-    var order = SortOrder.forward
-
-    func compare(_ toy0: Toy, _ toy1: Toy) -> ComparisonResult {
-      KeyPathComparator(\Toy.name, order: order).compare(toy0, toy1)
-    }
-  }
-
-  var name = ""
-  var cat: Cat?
-
-  init(_ name: String) {
-    self.name = name
-  }
-}
-
-private extension ModelContext {
-  static var inMemory: ModelContext {
-    get throws {
-      ModelContext(
-        try .init(for: Cat.self, configurations: .init(isStoredInMemoryOnly: true))
-      )
-    }
   }
 }
